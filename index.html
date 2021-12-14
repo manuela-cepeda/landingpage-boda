@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamiento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <!--  <div class="header__logoymarca"> -->
+        <img class="header__logo" src="img/anillos.svg" alt="Logo">
+        <br>
+        <a class="header__marca" href="/">Lean y Pau</a>
+        <!-- </div> -->
+        <nav class="header__nav">
+            <a class="nav__a" href="#nosotros">Nuestra historia</a>
+            <a class="nav__a" href="#boda">La Boda</a>
+            <a class="nav__a" href="#itinerario">Itinerario</a>
+            <a class="nav__a" href="#confirmacion">Confirmación</a>
+            <a class="nav__a" href="#mapa">Mapa</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+
+
+            <h2 class="hero__title">¡Nos Casamos!</h2>
+            <h1 class="hero__title"> Lean y Pau </h1>
+            <h1 class="hero__title"> Lean y Pau </h1>
+            <h4 class="hero__title"> 26 de febrero de 2022 </h4>
+
+        </section>
+        <section class="nosotros" id="nosotros">
+            <div>
+                <h2>Nuestra historia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio commodi neque,
+                    exercitationem repellat
+                    molestiae natus totam minima, rem laborum amet facilis unde, illo esse accusantium obcaecati
+                    temporibus?
+                    Totam, ipsam aperiam. </p>
+            </div>
+            <img class="nosotros__img" src="img/nuestra_historia.jpg" alt="nuestra_historia">
+
+        </section>
+
+        <section class="boda" id="boda">
+            <h2>La Boda</h2>
+            <div class="boda__gridcontainer">
+                <div>
+                    <i class="far fa-calendar"></i>
+                    <h4>Fecha</h4>
+                    <p class="boda__p">27 de febrero de 2022</p>
+                </div>
+                <div>
+                    <i class="far fa-clock"></i>
+                    <h4>Hora</h4>
+                    <p class="boda__p">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker"></i>
+                    <h4>Lugar</h4>
+                    <p class="boda__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, neque?</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="itinerario">
+            <h2>Itinerario</h2>
+            <div class="itinerario__gridcontainer">
+                <div>
+                    <h4>Ceremonia</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus earum facere sunt
+                        quibusdam
+                        cupiditate et accusantium esse suscipit ab, accusamus maiores quis illum provident, culpa nulla
+                        iusto
+                        fuga sequi. Exercitationem?</p>
+                </div>
+                <img class="itinerario__img" src="img/ceremonia.jpg" alt="ceremonia">
+            </div>
+            <div class="itinerario__gridcontainer fiesta">
+                <div>
+                    <h4>Cena y Fiesta</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet temporibus reprehenderit
+                        dicta
+                        iste
+                        incidunt cumque. Nihil ducimus voluptate illum ex dolor nostrum, commodi eius rerum sed enim
+                        nulla
+                        blanditiis.</p>
+                    </div>
+                    <img class="itinerario__img" src="img/salon_fiesta.jpg" alt="salon_fiesta">
+            </div>
+        </section>
+
+        <section id="confirmacion">
+            <h2>¡Espero que vengas!</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus earum facere sunt quibusdam
+                cupiditate et accusantium esse suscipit ab, accusamus maiores quis illum provident, culpa nulla iusto
+                fuga sequi. Exercitationem?</p>
+
+            <form class="confirmacion__form" action="">
+                <fieldset>
+                    <legend>Confirmación de asistencia </legend>
+
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <br>
+                    <input class="input__radio" type="radio" name="asiste">
+                    <label>Asistiré</label>
+                    <input class="input__radio" type="radio" name="no_asiste">
+                    <label>No podré asistir</label>
+                    <br>
+                    <select>
+                        <option value="" disabled selected>Menú especial</option>
+                        <option value="gluten"> Sin gluten </option>
+                        <option value="gluten"> Sin lácteos </option>
+                        <option value="gluten"> Sin alérgenos </option>
+                        <option value="gluten"> Vegano o vegetariano </option>
+                    </select>
+                    <br>
+                    <textarea cols="30" rows="10"> Aclaraciones</textarea>
+
+
+
+
+                </fieldset>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+
+
+        </section>
+
+        <section id="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13399.934379583334!2d-60.68900448714906!3d-32.89860199974899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539d2601e269%3A0xb4029922c7a2e26d!2sVilla%20Margherita!5e0!3m2!1ses!2ses!4v1636996615749!5m2!1ses!2ses"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Fotografias de <a class="footer__a" href="https://www.facebook.com/search/top?q=cuatro%20miradas">Cuatro
+                Miradas</a></p>
+        <p>Hecho por MLC 2021</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+/*Globals*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+i {
+    margin: 1rem;
+    font-size: 22px;
+    ;
+}
+
+section {
+
+    text-align: center;
+}
+
+section p {
+    width: 60%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*End Globals*/
+
+/*Header*/
+
+
+
+.header {
+    padding: 0.5rem;
+    background-color: #333;
+    text-align: center;
+}
+
+
+
+.header__logo {
+    height: 3rem;
+    width: 3rem;
+    filter: invert();
+    margin: 0 1rem;
+
+}
+
+.header__marca {
+    color: rgb(167, 168, 91);
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    flex: 1 1 auto;
+}
+
+
+
+
+.header__nav {
+    margin-right: 3rem;
+}
+
+
+
+.nav__a {
+    display: block;
+    color: #acacac;
+    padding: 1rem;
+
+}
+
+
+.nav__a:hover {
+
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        background-color: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__marca {
+
+        flex: 1 1 auto;
+    }
+
+    
+.nav__a {
+
+    display: inline;
+
+}
+}
+
+
+/*End Header*/
+
+/*Hero*/
+.hero {
+    margin: 0;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/fondo_hero.jpg);
+    background-position: top;
+    text-align: center;
+    padding: 15rem 0;
+    overflow: hidden;
+    height: 100%;
+    color: #fff;
+}
+
+.hero__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
+}
+
+@media screen and (min-width: 768px) { 
+
+    .hero{
+        margin-top: -6rem;
+        
+    }
+}
+
+/*End Hero*/
+
+/*Nosotros*/
+
+.nosotros__img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-top: 2rem;
+    }
+
+}
+
+
+/*End Nosotros*/
+
+/*Boda*/
+
+
+
+.boda__p {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .boda__gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+}
+/*End Boda*/
+
+/* Itinerario */
+
+
+
+.itinerario__img {
+    width: 100%;
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .itinerario__gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-top: 2rem;
+    }
+
+    .itinerario__gridcontainer.fiesta div {
+        order: 2;
+
+    }
+
+    .itinerario__img {
+        width: 30rem;
+
+
+    }
+}
+/*End Itinerario*/
+
+/* Confirmacion */
+
+/* Form */
+fieldset {
+    border: none;
+}
+
+legend {
+    padding: 2rem;
+    font-size: 32px;
+
+}
+
+input,
+textarea,
+select {
+    padding: 0.8rem;
+    width: 60%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+
+}
+
+.input__radio {
+    display: inline;
+    width: auto;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+textarea {
+    height: 20rem;
+}
+
+/* End Form */
+
+.btn {
+    width: 50%;
+    background-color: #333;
+    color: #fff;
+}
+
+/* End Confirmacion */
+
+/* Footer */
+
+
+.footer {
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+
+}
+
+.footer__a {
+    color: rgb(167, 168, 91);
+}
