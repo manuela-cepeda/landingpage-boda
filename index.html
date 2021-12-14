@@ -20,14 +20,17 @@
 <body>
     <header class="header">
         <!--  <div class="header__logoymarca"> -->
-        <img class="header__logo" src="img/anillos.svg" alt="Logo">
-        <br>
-        <a class="header__marca" href="/">Lean y Pau</a>
+        <div class="header__marca">
+            <img class="header__logo" src="img/anillos.svg" alt="Logo">
+
+            <a  class="header__texto href="/">Lean y Pau</a>
+        </div>
+
         <!-- </div> -->
         <nav class="header__nav">
             <a class="nav__a" href="#nosotros">Nuestra historia</a>
             <a class="nav__a" href="#boda">La Boda</a>
-            <a class="nav__a" href="#itinerario">Itinerario</a>
+            <!-- <a class="nav__a" href="#itinerario">Itinerario</a> -->
             <a class="nav__a" href="#confirmacion">Confirmación</a>
             <a class="nav__a" href="#mapa">Mapa</a>
         </nav>
@@ -35,20 +38,23 @@
     <main>
         <section class="hero">
 
-
-            <h2 class="hero__title">¡Nos Casamos!</h2>
-            <h1 class="hero__title"> Lean y Pau </h1>
-            <h4 class="hero__title"> 26 de febrero de 2022 </h4>
+            <div class="hero__title">
+                <h2>¡Nos Casamos!</h2>
+                <h1> Lean y Pau </h1>
+                <h4> 26 de febrero de 2022 </h4>
+                <a href="#nosotros"><i class="fas fa-chevron-down"></i></a>
+            </div>
 
         </section>
-        <section class="nosotros" id="nosotros">
-            <div>
+        <section class="nosotros background-gradient" id="nosotros">
+            <div class="nosotros__text">
                 <h2>Nuestra historia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio commodi neque,
                     exercitationem repellat
                     molestiae natus totam minima, rem laborum amet facilis unde, illo esse accusantium obcaecati
                     temporibus?
                     Totam, ipsam aperiam. </p>
+                <a href="#boda"><i class="fas fa-chevron-down"></i></a>
             </div>
             <img class="nosotros__img" src="img/nuestra_historia.jpg" alt="nuestra_historia">
 
@@ -56,6 +62,7 @@
 
         <section class="boda" id="boda">
             <h2>La Boda</h2>
+           
             <div class="boda__gridcontainer">
                 <div>
                     <i class="far fa-calendar"></i>
@@ -72,10 +79,12 @@
                     <h4>Lugar</h4>
                     <p class="boda__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, neque?</p>
                 </div>
+              
             </div>
+            <a href="#confirmacion"><i class="fas fa-chevron-down"></i></a>
         </section>
 
-        <section id="itinerario">
+        <!--  <section id="itinerario">
             <h2>Itinerario</h2>
             <div class="itinerario__gridcontainer">
                 <div>
@@ -100,14 +109,18 @@
                     </div>
                     <img class="itinerario__img" src="img/salon_fiesta.jpg" alt="salon_fiesta">
             </div>
-        </section>
+        </section> -->
 
-        <section id="confirmacion">
-            <h2>¡Espero que vengas!</h2>
+        <section id="confirmacion" class="confirmacion background-gradient">
+            <div class="confirmacion__text">
+                <h2>¡Espero que vengas!</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus earum facere sunt quibusdam
-                cupiditate et accusantium esse suscipit ab, accusamus maiores quis illum provident, culpa nulla iusto
-                fuga sequi. Exercitationem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus earum facere sunt quibusdam
+                    cupiditate et accusantium esse suscipit ab, accusamus maiores quis illum provident, culpa nulla
+                    iusto
+                    fuga sequi. Exercitationem?</p>
+                    <a href="#mapa"><i class="fas fa-chevron-down"></i></a>        
+            </div>
 
             <form class="confirmacion__form" action="">
                 <fieldset>
@@ -137,7 +150,7 @@
                 <input class="btn" type="submit" value="Enviar">
             </form>
 
-
+           
         </section>
 
         <section id="mapa">
