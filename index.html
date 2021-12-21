@@ -19,20 +19,19 @@
 
 <body>
     <header class="header">
-        <!--  <div class="header__logoymarca"> -->
+     
         <div class="header__marca">
             <img class="header__logo" src="img/anillos.svg" alt="Logo">
 
             <a  class="header__texto href="/">Lean y Pau</a>
         </div>
 
-        <!-- </div> -->
+      
         <nav class="header__nav">
             <a class="nav__a" href="#nosotros">Nuestra historia</a>
-            <a class="nav__a" href="#boda">La Boda</a>
-            <!-- <a class="nav__a" href="#itinerario">Itinerario</a> -->
-            <a class="nav__a" href="#confirmacion">Confirmación</a>
+            <a class="nav__a" href="#boda">La Boda</a>      
             <a class="nav__a" href="#mapa">Mapa</a>
+            <a class="nav__a" href="#confirmacion">Confirmación</a>
         </nav>
     </header>
     <main>
@@ -84,32 +83,11 @@
             <a href="#confirmacion"><i class="fas fa-chevron-down"></i></a>
         </section>
 
-        <!--  <section id="itinerario">
-            <h2>Itinerario</h2>
-            <div class="itinerario__gridcontainer">
-                <div>
-                    <h4>Ceremonia</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus earum facere sunt
-                        quibusdam
-                        cupiditate et accusantium esse suscipit ab, accusamus maiores quis illum provident, culpa nulla
-                        iusto
-                        fuga sequi. Exercitationem?</p>
-                </div>
-                <img class="itinerario__img" src="img/ceremonia.jpg" alt="ceremonia">
-            </div>
-            <div class="itinerario__gridcontainer fiesta">
-                <div>
-                    <h4>Cena y Fiesta</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet temporibus reprehenderit
-                        dicta
-                        iste
-                        incidunt cumque. Nihil ducimus voluptate illum ex dolor nostrum, commodi eius rerum sed enim
-                        nulla
-                        blanditiis.</p>
-                    </div>
-                    <img class="itinerario__img" src="img/salon_fiesta.jpg" alt="salon_fiesta">
-            </div>
-        </section> -->
+        <section id="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13399.934379583334!2d-60.68900448714906!3d-32.89860199974899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539d2601e269%3A0xb4029922c7a2e26d!2sVilla%20Margherita!5e0!3m2!1ses!2ses!4v1636996615749!5m2!1ses!2ses"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
 
         <section id="confirmacion" class="confirmacion background-gradient">
             <div class="confirmacion__text">
@@ -119,7 +97,7 @@
                     cupiditate et accusantium esse suscipit ab, accusamus maiores quis illum provident, culpa nulla
                     iusto
                     fuga sequi. Exercitationem?</p>
-                    <a href="#mapa"><i class="fas fa-chevron-down"></i></a>        
+                    <a href="#footer"><i class="fas fa-chevron-down"></i></a>        
             </div>
 
             <form class="confirmacion__form" action="">
@@ -153,18 +131,15 @@
            
         </section>
 
-        <section id="mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13399.934379583334!2d-60.68900448714906!3d-32.89860199974899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539d2601e269%3A0xb4029922c7a2e26d!2sVilla%20Margherita!5e0!3m2!1ses!2ses!4v1636996615749!5m2!1ses!2ses"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
+        
 
     </main>
 
-    <footer class="footer">
-        <p>Fotografias de <a class="footer__a" href="https://www.facebook.com/search/top?q=cuatro%20miradas">Cuatro
+    <footer id="footer" class="footer">
+        <p>Fotografias de <a class="footer__a" href="https://www.facebook.com/search/top?q=cuatro%20miradas"  target="_blank">Cuatro
                 Miradas</a></p>
-        <p>Hecho por MLC 2021</p>
+        <p>Hecho por <a class="footer__a" href="https://github.com/manuela-cepeda" target="_blank">MLC 2021</a></p>
+        <a href="#"><i class="fas fa-chevron-up"></i></a> 
     </footer>
 
 </body>

@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     font-size: 32px;
-  
+
     margin-bottom: 1rem;
 }
 
@@ -43,7 +43,6 @@ i {
 }
 
 section {
-   
     text-align: center;
 }
 
@@ -54,60 +53,9 @@ section p {
     margin-right: auto;
 }
 
-.background-gradient{ 
-    background-image: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #eeeed1 100%);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-height: 100vh;
-
-
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.fa-chevron-down{
-   text-align: center;
-   font-weight: bold;
-   display: block;
-   text-decoration: none;
-   color: rgba(56, 56, 56, 0.5);
-   animation: scale 4s ease-in-out infinite;
-}
-
-.fa-chevron-down:hover{
-    color: rgb(167, 168, 91);
-}
-
-@keyframes scale {
-    0% {
-        transform: scale(0.8);
-    }
-    50% {
-        transform: scale(1.3);
-    }
-    100% {
-        transform: scale(0.8);
-    }
-
-}
 /*End Globals*/
 
-
-
-
-
 /*Header*/
-
-
 
 .header {
     padding: 0.5rem;
@@ -155,7 +103,8 @@ height: 100vh;
 
 
 }
-.header__marca{
+
+.header__marca {
     display: flex;
     align-items: center;
 }
@@ -169,13 +118,13 @@ height: 100vh;
         align-items: center;
     }
 
-   
-    
-.nav__a {
 
-    display: inline;
 
-}
+    .nav__a {
+
+        display: inline;
+
+    }
 }
 
 
@@ -184,20 +133,20 @@ height: 100vh;
 /*Hero*/
 .hero {
     margin: 0;
-    
+
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url(img/fondo_hero.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-   
+
     overflow: hidden;
     height: calc(100vh + 2rem);
     color: #fff;
 }
 
 .hero__title {
-    
+
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
@@ -206,11 +155,11 @@ height: 100vh;
 
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
 
-    .hero{
+    .hero {
         margin-top: -6rem;
-        
+
     }
 
     .hero__title {
@@ -219,9 +168,9 @@ height: 100vh;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      
-    
-    
+
+
+
     }
 }
 
@@ -229,39 +178,42 @@ height: 100vh;
 
 /*Nosotros*/
 
-
-
-.nosotros__text{
+.nosotros__text {
     margin: auto 0;
 }
 
 .nosotros__img {
-    height: 100vh;
-    
+    width: 100%;
+
 }
 
 @media screen and (min-width: 768px) {
     .nosotros {
+
         display: grid;
         grid-template-columns: repeat(2, auto);
-      
+
     }
 
-}
+    .nosotros__img {
+        height: 100vh;
 
+    }
+}
 
 /*End Nosotros*/
 
 /*Boda*/
 
-.boda{
-      margin: 3rem auto; 
+.boda {
+    margin: 1rem auto;
 }
 
 
 .boda__p {
     text-align: center;
 }
+
 
 @media screen and (min-width: 768px) {
 
@@ -273,47 +225,15 @@ height: 100vh;
 
 
 }
+
 /*End Boda*/
 
-/* /* /* Itinerario 
 
-#itinerario {
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-}
-
-
-.itinerario__img {
-    width: 100%;
-
-
-}
-
-@media screen and (min-width: 768px) {
-
-    .itinerario__gridcontainer {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        margin-top: 2rem;
-    }
-
-    .itinerario__gridcontainer.fiesta div {
-        order: 2;
-
-    }
-
-    .itinerario__img {
-        width: 30rem;
-
-
-    }
-} */ 
-/*End Itinerario*/
 
 /* Confirmacion */
 
-/* Form */
 
-.confirmacion__text{
+.confirmacion__text {
     margin: auto 0;
 }
 
@@ -336,7 +256,7 @@ textarea,
 select {
     padding: 0.4rem;
     width: 70%;
-    background-color: #e1e1e1;
+
     margin-bottom: 1rem;
     border: none;
     border-radius: 0.3rem;
@@ -355,29 +275,28 @@ textarea {
 }
 
 
-
-@media screen and (min-width: 768px) {
-
-    .confirmacion {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-    }
-
-    
-}
-
-
-
-/* End Form */
-
 .btn {
     width: 50%;
     background-color: #333;
     color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+
+    .confirmacion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+}
+
+
+
 /* End Confirmacion */
+
+
 
 /* Footer */
 
@@ -393,3 +312,74 @@ textarea {
 .footer__a {
     color: rgb(167, 168, 91);
 }
+
+/* End Footer */
+
+/* Animations */
+
+.background-gradient {
+    background-image: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #eeeed1 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .background-gradient {
+
+        height: 100vh;
+
+
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fa-chevron-down,
+.fa-chevron-up {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: #38383880;
+    animation: scale 4s ease-in-out infinite;
+}
+.fa-chevron-up{
+    color: #f1f1f1;
+}
+
+.fa-chevron-down:hover,
+.fa-chevron-up:hover {
+    color: rgb(167, 168, 91);
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+
+}
+
+/*End  Animations **/
