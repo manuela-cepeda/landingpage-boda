@@ -89,15 +89,20 @@ section p {
 
 
 .nav__a {
-    display: block;
+    text-decoration: none;
     color: #acacac;
     padding: 1rem;
-
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+   
 }
 
 
 .nav__a:hover {
-
+    background-size: 75% 2px;
     color: #ffffff;
     transition: all 0.5s ease-in-out;
 
